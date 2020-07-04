@@ -5,7 +5,7 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "JetBrains Mono Nerd Font:pixelsize=12:antialias=true:autohint=true";
+static char *font = "JetBrains Mono Nerd Font:pixelsize=16:antialias=true:autohint=true";
 /* Spare fonts */
 static char *font2[] = {
     "Symbola:pixelsize=12:antialias=true:autohint=true",
@@ -208,8 +208,8 @@ static Shortcut shortcuts[] = {
 	{ TERMMOD,              XK_Y,           selpaste,       {.i =  0} },
 	{ ShiftMask,            XK_Insert,      selpaste,       {.i =  0} },
 	{ TERMMOD,              XK_Num_Lock,    numlock,        {.i =  0} },
-	{ ShiftMask,            XK_Page_Up,     kscrollup,      {.i = -1} },
-	{ ShiftMask,            XK_Page_Down,   kscrolldown,    {.i = -1} },
+	{ TERMMOD,            XK_Page_Up,     kscrollup,      {.i = -1} },
+	{ TERMMOD,            XK_Page_Down,   kscrolldown,    {.i = -1} },
 	{ TERMMOD,            XK_Up,     kscrollup,      {.i = +1} },
 	{ TERMMOD,            XK_Down,   kscrolldown,    {.i = +1} },
 };
