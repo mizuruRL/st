@@ -8,8 +8,8 @@
 static char *font = "JetBrains Mono Nerd Font:pixelsize=16:antialias=true:autohint=true";
 /* Spare fonts */
 static char *font2[] = {
-	"Symbola:pixelsize=12:antialias=true:autohint=true",
 	"JetBrains Mono:pixelsize=12:antialias=true:autohint=true",
+	"Symbola:pixelsize=12:antialias=true:autohint=true",
 };
 
 static int borderpx = 2;
@@ -100,7 +100,7 @@ char *termname = "st-256color";
 unsigned int tabspaces = 8;
 
 /* bg opacity */
-float alpha = 0.95;
+float alpha = 0.925;
 
 /* Terminal colors (16 first used in escape sequence) */
 const char *colorname[] = {
@@ -223,8 +223,8 @@ static Shortcut shortcuts[] = {
 	{ TERMMOD,              XK_Num_Lock,    numlock,        {.i =  0} },
 	{ TERMMOD,            XK_Page_Up,     kscrollup,      {.i = -1} },
 	{ TERMMOD,            XK_Page_Down,   kscrolldown,    {.i = -1} },
-	{ TERMMOD,            XK_Up,     kscrollup,      {.i = +1} },
-        { TERMMOD,            XK_Down,   kscrolldown,    {.i = +1} },
+	{ TERMMOD,            XK_K,     kscrollup,      {.i = +1} },
+        { TERMMOD,            XK_J,   kscrolldown,    {.i = +1} },
 };
 
 /*
